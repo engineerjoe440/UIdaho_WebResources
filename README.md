@@ -9,3 +9,7 @@ material is still in very early stages, but will continue to grow and change.
 
 ### Contact:
 [*Joe Stanley*](mailto:joe_stanley@selinc.com)
+
+### University of Idaho Website:
+[University of Idaho](https://www.uidaho.edu/)
+[College of Engineering](https://www.uidaho.edu/engr)
