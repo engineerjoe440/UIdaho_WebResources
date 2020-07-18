@@ -1,7 +1,5 @@
-.. IndustrialControlsClass-UIdaho documentation master file, created by
-   sphinx-quickstart on Sat Jul 18 15:36:22 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. IndustrialControlsClass-UIdaho documentation master file,
+   created on Sat Jul 18 15:36:22 2020 by Joe Stanley.
 
 Welcome to IndustrialControlsClass-UIdaho's documentation!
 ==========================================================
@@ -14,7 +12,8 @@ Welcome to IndustrialControlsClass-UIdaho's documentation!
 .. raw:: html
 
     <!-- Test Load a PDF Document in the Page -->
-    <embed src="../../Cheat Sheets for Students/Renders/Creating_a_Latex_Document.pdf" width="800px" height="200px" />
+    <embed src="../../Cheat Sheets for Students/Renders/Creating_a_Latex_Document.pdf"
+        width="800px" height="200px" />
 
 
 Indices and tables
