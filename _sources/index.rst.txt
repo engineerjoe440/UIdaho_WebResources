@@ -1,24 +1,21 @@
 .. IndustrialControlsClass-UIdaho documentation master file,
    created on Sat Jul 18 15:36:22 2020 by Joe Stanley.
 
-Welcome to IndustrialControlsClass-UIdaho's documentation!
+.. image:: _static/header_banner.jpg
+   :width: 100%
+
+|
+
+Welcome to University of Idaho ECE Industrial Controls!
 ==========================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
+   
+   cheatsheets
 
 
-.. raw:: html
-
-    <!-- Test Load a PDF Document in the Page -->
-    <embed src="https://github.com/engineerjoe440/UIdaho_ControlsClass/raw/master/Cheat Sheets for Students/Renders/Creating_a_Latex_Document.pdf"
-        width="800px" height="200px"/>
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
