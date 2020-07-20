@@ -7,6 +7,11 @@ and more related to the Industrial Controls class at the University of Idaho. Th
 material is still in very early stages, but will continue to grow and change.
 
 
+## `gh-pages` Branch:
+
+This repository branch is dedicated to the HTML web-build for GitHub-Hosted web pages.
+
+
 ### Contact:
 [*Joe Stanley*](mailto:joe_stanley@selinc.com)
 
