@@ -25,8 +25,6 @@ jobs:
       - name: Build Sphinx docs
         if: success()
         run: |
-          pip install .
-          python3 -c "import electricpy; print('electricpy.__file__')"
           sphinx-build -M html source docs
 
       # https://github.com/marketplace/actions/github-pages
