@@ -12,8 +12,8 @@ Welcome to IndustrialControlsClass-UIdaho's documentation!
 .. raw:: html
 
     <!-- Test Load a PDF Document in the Page -->
-    <embed src="../../Cheat Sheets for Students/Renders/Creating_a_Latex_Document.pdf"
-        width="800px" height="200px" />
+    <embed src="https://github.com/engineerjoe440/UIdaho_ControlsClass/raw/master/Cheat Sheets for Students/Renders/Creating_a_Latex_Document.pdf"
+        width="800px" height="200px"/>
 
 
 Indices and tables
