@@ -1,7 +1,7 @@
 .. IndustrialControlsClass-UIdaho documentation master file,
    created on Sat Jul 18 15:36:22 2020 by Joe Stanley.
 
-:repository-url: https://github.com/engineerjoe440/UIdaho_ControlsClass/tree/master
+:repository-url: https://github.com/engineerjoe440/UIdaho_ControlsClass/blob/master
 
 Welcome to IndustrialControlsClass-UIdaho's documentation!
 ==========================================================
