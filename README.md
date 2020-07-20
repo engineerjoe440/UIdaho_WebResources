@@ -7,7 +7,7 @@ and more related to the Industrial Controls class at the University of Idaho. Th
 material is still in very early stages, but will continue to grow and change.
 
 **Are you looking for the full web-page instead?**
-Use [this](https://engineerjoe440.github.io/UIdaho_ControlsClass/) link then!
+Use [this link](https://engineerjoe440.github.io/UIdaho_ControlsClass/) then!
 
 ### Contact:
 [*Joe Stanley*](mailto:joe_stanley@selinc.com)
