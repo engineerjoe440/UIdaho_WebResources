@@ -1,8 +1,6 @@
 .. IndustrialControlsClass-UIdaho documentation master file,
    created on Sat Jul 18 15:36:22 2020 by Joe Stanley.
 
-:repository-url: https://github.com/engineerjoe440/UIdaho_ControlsClass/blob/master
-
 Welcome to IndustrialControlsClass-UIdaho's documentation!
 ==========================================================
 
@@ -14,8 +12,8 @@ Welcome to IndustrialControlsClass-UIdaho's documentation!
 .. raw:: html
 
     <!-- Test Load a PDF Document in the Page -->
-    <embed src="{{ repository-url }}/Cheat Sheets for Students/Renders/Creating_a_Latex_Document.pdf"
-        width="800px" height="200px" />
+    <embed src="https://github.com/engineerjoe440/UIdaho_ControlsClass/blob/master/Cheat Sheets for Students/Renders/Creating_a_Latex_Document.pdf"
+        width="800px" height="200px"/>
 
 
 Indices and tables
