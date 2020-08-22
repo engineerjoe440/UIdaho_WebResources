@@ -28,7 +28,7 @@
     </p>
     <p>
     {%- if show_copyright %}
-      {% trans blog=blog|e %} Visit Joe Stanley's <a href="{{ blog }}">blog</a> for topical articles.{% endtrans %}
+      {% trans blog=blog|e, name=copyright.split(',')[1]|e %} Visit {{ name }}'s <a href="{{ blog }}">blog</a> for topical articles and other interesting content.{% endtrans %}
     {%- endif %}
     </p>
   </div>
