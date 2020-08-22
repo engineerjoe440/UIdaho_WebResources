@@ -26,6 +26,11 @@
       {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
     {%- endif %}
     </p>
+    <p>
+    {%- if show_copyright %}
+      {% trans blog=blog|e %} Visit Joe Stanley's <a href="{{ blog }}">blog</a> for topical articles.{% endtrans %}
+    {%- endif %}
+    </p>
   </div>
 
   <!--- {% trans %}Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>{% endtrans %}. --->

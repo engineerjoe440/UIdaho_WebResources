@@ -20,6 +20,7 @@
 project = 'UIdaho Industrial Controls'
 copyright = '2020, Joe Stanley'
 author = 'Joe Stanley'
+blog = 'https://engineerjoe440.github.io/stanley-solutions-blog/'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0'
@@ -58,5 +59,8 @@ html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_logo = '_static/UI_ENG_stacked_W.png'
+html_context = {
+    'blog' : blog,
+}
 
 # END
