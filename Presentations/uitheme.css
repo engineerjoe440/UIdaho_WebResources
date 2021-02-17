@@ -1,0 +1,859 @@
+@charset "UTF-8";
+/*!
+ * Marp / Marpit theme.
+ *
+ * @theme uitheme
+ * @author Joe Stanley University of Idaho
+ * @auto-scaling true
+ */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:400,700");
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+Theme Based off Work from Tatsuya Sakaguchi: https://github.com/ttyskg/marp-themes
+
+*/
+
+/* Global Constants that are Supported in New Browsers */
+:root {
+  --selblue: #003B70;
+  --selbluebackground: #032843;
+  --selyellow: #FFBA5F;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #ffffff;
+  color: #000000;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #008080;
+  font-style: italic;
+}
+
+/* 61131 Keywords */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition,
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-built_in,
+.hljs-deletion,
+.hljs-function {
+  color: #3A00DE;
+  font-weight: bold;
+}
+
+/* Numbers/Literals/Strings */
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp,
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+  color: #808000;
+}
+
+/* // This is for formulas (like LaTeX syntax) and isn't widely used.
+.hljs-formula {
+  background: #073642;
+}
+*/
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+svg[data-marp-fitting=svg] {
+  max-height: 580px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0 0 0;
+  color: var(--selblue);
+}
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.9em;
+}
+
+p,
+blockquote {
+  margin: 1em 0 0 0;
+}
+
+ul > li,
+ol > li {
+  margin: 0.3em 0 0 0;
+}
+ul > li > p,
+ol > li > p {
+  margin: 0.6em 0 0 0;
+}
+
+code {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+  letter-spacing: 0;
+  margin: -0.1em 0.15em;
+  padding: 0.1em 0.2em;
+  vertical-align: baseline;
+}
+
+pre {
+  display: block;
+  margin: 1em 0 0 0;
+  min-height: 1em;
+  overflow: visible;
+}
+pre code {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 100%;
+  padding: 0.5em;
+  font-size: 0.7em;
+  box-shadow: 
+       inset 0 -3em 3em rgba(0,0,0,0.1), 
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+pre code svg[data-marp-fitting=svg] {
+  max-height: calc(580px - 1em);
+}
+
+blockquote {
+  margin: 1em 0 0 0;
+  padding: 0 1em;
+  position: relative;
+}
+blockquote::after, blockquote::before {
+  content: "“";
+  display: block;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  position: absolute;
+}
+blockquote::before {
+  top: 0;
+  left: 0;
+}
+blockquote::after {
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+blockquote > *:first-child {
+  margin-top: 0;
+}
+
+mark {
+  background: transparent;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 1em 0 0 0;
+}
+table th,
+table td {
+  padding: 0.2em 0.4em;
+  border-width: 1px;
+  border-style: solid;
+}
+
+section {
+  font-size: 35px;
+  font-family: "Lato", "Avenir Next", "Avenir", "Trebuchet MS", "Segoe UI", sans-serif;
+  height: 1080px;
+  line-height: 1.35;
+  letter-spacing: 1.25px;
+  padding: 70px;
+  width: 1920px;
+  color: #202228;
+  background-color: #fdfcff;
+}
+
+section {
+    @extend .transmissionlines;
+    @extend .substationengineers;
+    @extend .future;
+    @extend .controlcenter;
+    @extend .substation;
+    @extend .rtacfamily;
+    @extend .axion;
+    @extend .acrtactable;
+}
+
+section > *:first-child,
+section > header:first-child + * {
+  margin-top: 0;
+}
+section a,
+section mark {
+  color: #0288d1;
+}
+section code {
+  background: #fdfcff;
+  color: #4c4e53;
+}
+section h1 strong,
+section h2 strong,
+section h3 strong,
+section h4 strong,
+section h5 strong,
+section h6 strong {
+  color: #0288d1;
+}
+section pre > code {
+  background: #ffffff;
+}
+section header,
+section footer,
+section section::after,
+section blockquote::before,
+section blockquote::after {
+  color: #4c4e53;
+}
+section table th,
+section table td {
+  border-color: #202228;
+}
+section table thead th {
+  background: #202228;
+  color: #fdfcff;
+}
+section table tbody > tr:nth-child(odd) td,
+section table tbody > tr:nth-child(odd) th {
+  background: rgba(32, 34, 40, 0.1);
+}
+section.invert {
+  color: #ffffff;
+  background-color: var(--selbluebackground);
+}
+section.invert a,
+section.invert mark {
+  color: #81d4fa;
+}
+section.invert code {
+  background: #d1d0d4;
+  color: #202228;
+}
+section.invert h1,
+section.invert h2,
+section.invert h3,
+section.invert h4,
+section.invert h5,
+section.invert h6 {
+    color: #ffffff;
+}
+section.invert h1 strong,
+section.invert h2 strong,
+section.invert h3 strong,
+section.invert h4 strong,
+section.invert h5 strong,
+section.invert h6 strong {
+  color: var(--selyellow);
+}
+section.invert pre > code {
+  background: #fdfcff;
+}
+section.invert header,
+section.invert footer,
+section.invert section::after,
+section.invert blockquote::before,
+section.invert blockquote::after {
+  color: #d1d0d4;
+}
+section.invert table th,
+section.invert table td {
+  border-color: #fdfcff;
+}
+section.invert table thead th {
+  background: #fdfcff;
+  color: #202228;
+}
+section.invert table tbody > tr:nth-child(odd) td,
+section.invert table tbody > tr:nth-child(odd) th {
+  background: rgba(253, 252, 255, 0.1);
+}
+section.transmissionlines {
+  color: #fdfcff;
+  background-color: #02E9D1;
+  background-image: url("https://selinc.com/uploadedImages/Web/Promotional/PNM/Lines.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  font-size: 24px;
+}
+section.transmissionlines p {
+  text-shadow: 2px 2px #000000;
+}
+section.transmissionlines a,
+section.transmissionlines mark {
+  color: #81d4fa;
+}
+section.transmissionlines code {
+  background: #cbe5f6;
+  color: #0288d1;
+  text-shadow: 0px 0px #ffffff00;
+}
+section.transmissionlines h1,
+section.transmissionlines h2,
+section.transmissionlines h3,
+section.transmissionlines h4,
+section.transmissionlines h5,
+section.transmissionlines h6 {
+  color: #502105;
+}
+section.transmissionlines h1 strong,
+section.transmissionlines h2 strong,
+section.transmissionlines h3 strong,
+section.transmissionlines h4 strong,
+section.transmissionlines h5 strong,
+section.transmissionlines h6 strong {
+  color: #81d4fa;
+}
+section.transmissionlines pre > code {
+  background: #fdfcff;
+}
+section.transmissionlines header,
+section.transmissionlines footer,
+section.transmissionlines section::after,
+section.transmissionlines blockquote::before,
+section.transmissionlines blockquote::after {
+  color: #cbe5f6;
+}
+section.transmissionlines table th,
+section.transmissionlines table td {
+  border-color: #fdfcff;
+}
+section.transmissionlines table thead th {
+  background: #fdfcff;
+  color: #0288d1;
+}
+section.transmissionlines table tbody > tr:nth-child(odd) td,
+section.transmissionlines table tbody > tr:nth-child(odd) th {
+  background: rgba(253, 252, 255, 0.1);
+}
+section.substationengineers {
+  color: #fdfcff;
+  background-color: #02E9D1;
+  background-image: url("https://selinc.com/uploadedImages/Web/Promotional/PNM/Substation-engineers.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 24px;
+}
+section.substationengineers p {
+  text-shadow: 0px 0px 35px #444E55,0px 0px 35px #444E55,
+                 0px 0px 35px #444E55,0px 0px 35px #444E55;
+  color:#ffffff;
+}
+section.substationengineers a,
+section.substationengineers mark {
+  color: #81d4fa;
+}
+section.substationengineers code {
+  color: #0288d1;
+  background: #ffffff00;
+  text-shadow: 0px 0px 35px #ffffff,0px 0px 35px #ffffff,
+                 0px 0px 35px #ffffff,0px 0px 35px #ffffff;
+}
+section.substationengineers h1,
+section.substationengineers h2,
+section.substationengineers h3,
+section.substationengineers h4,
+section.substationengineers h5,
+section.substationengineers h6 {
+  color: #502105;
+}
+section.substationengineers h1 strong,
+section.substationengineers h2 strong,
+section.substationengineers h3 strong,
+section.substationengineers h4 strong,
+section.substationengineers h5 strong,
+section.substationengineers h6 strong {
+  color: #81d4fa;
+}
+section.substationengineers pre > code {
+  background: #fdfcff;
+}
+section.substationengineers header,
+section.substationengineers footer,
+section.substationengineers section::after,
+section.substationengineers blockquote::before,
+section.substationengineers blockquote::after {
+  color: #cbe5f6;
+}
+section.substationengineers table th,
+section.substationengineers table td {
+  border-color: #fdfcff;
+}
+section.substationengineers table thead th {
+  background: #fdfcff;
+  color: #0288d1;
+}
+section.substationengineers table tbody > tr:nth-child(odd) td,
+section.substationengineers table tbody > tr:nth-child(odd) th {
+  background: rgba(253, 252, 255, 0.1);
+}
+section.future {
+  color: #fdfcff;
+  background-color: #02E9D1;
+  background-image: url("https://selinc.com/uploadedImages/Web/Promotional/PNM/Future.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*
+section.future p {
+  text-shadow: 2px 2px #000000;
+}
+*/
+section.future a,
+section.future mark {
+  color: #81d4fa;
+}
+section.future code {
+  background: #cbe5f6;
+  color: #0288d1;
+}
+/*
+section.future h1,
+section.future h2,
+section.future h3,
+section.future h4,
+section.future h5,
+section.future h6 {
+  color: #502105;
+}
+*/
+section.future h1 strong,
+section.future h2 strong,
+section.future h3 strong,
+section.future h4 strong,
+section.future h5 strong,
+section.future h6 strong {
+  color: #81d4fa;
+}
+section.future pre > code {
+  background: #fdfcff;
+}
+section.future header,
+section.future footer,
+section.future section::after,
+section.future blockquote::before,
+section.future blockquote::after {
+  color: #cbe5f6;
+}
+section.future table th,
+section.future table td {
+  border-color: #fdfcff;
+}
+section.future table thead th {
+  background: #fdfcff;
+  color: #0288d1;
+}
+section.future table tbody > tr:nth-child(odd) td,
+section.future table tbody > tr:nth-child(odd) th {
+  background: rgba(253, 252, 255, 0.1);
+}
+section.controlcenter {
+  color: #fdfcff;
+  background-color: #000000;
+  background-image: url("https://prodcdn.selinc.com/uploadedImages/Web/Promotional/ELIA/Control%20Center.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*
+section.controlcenter p {
+  text-shadow: 2px 2px #000000;
+}
+*/
+section.controlcenter a,
+section.controlcenter mark {
+  color: #81d4fa;
+}
+section.controlcenter code {
+  background: #cbe5f6;
+  color: #0288d1;
+}
+section.controlcenter h1,
+section.controlcenter h2,
+section.controlcenter h3,
+section.controlcenter h4,
+section.controlcenter h5,
+section.controlcenter h6 {
+  color: #ffffff;
+}
+section.controlcenter h1 strong,
+section.controlcenter h2 strong,
+section.controlcenter h3 strong,
+section.controlcenter h4 strong,
+section.controlcenter h5 strong,
+section.controlcenter h6 strong {
+  color: #81d4fa;
+}
+section.controlcenter pre > code {
+  background: #fdfcff;
+}
+section.controlcenter header,
+section.controlcenter footer,
+section.controlcenter section::after,
+section.controlcenter blockquote::before,
+section.controlcenter blockquote::after {
+  color: #cbe5f6;
+}
+section.controlcenter table th,
+section.controlcenter table td {
+  border-color: #fdfcff;
+}
+section.controlcenter table thead th {
+  background: #fdfcff;
+  color: #0288d1;
+}
+section.controlcenter table tbody > tr:nth-child(odd) td,
+section.controlcenter table tbody > tr:nth-child(odd) th {
+  background: rgba(253, 252, 255, 0.1);
+}
+section.substation {
+  color: #ffffff;
+  background-color: #02E9D1;
+  background-image: url("https://prodcdn.selinc.com/uploadedImages/Web/Promotional/ELIA/Belgium%20Substation%203-crop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 28px;
+}
+section.substation a,
+section.substation mark {
+  color: #81d4fa;
+}
+section.substation code {
+  background: #cbe5f6;
+  color: #0288d1;
+}
+section.substation h1,
+section.substation h2,
+section.substation h3,
+section.substation h4,
+section.substation h5,
+section.substation h6 {
+  color: #ffffff;
+}
+section.substation h1 strong,
+section.substation h2 strong,
+section.substation h3 strong,
+section.substation h4 strong,
+section.substation h5 strong,
+section.substation h6 strong {
+  color: #81d4fa;
+}
+section.substation pre > code {
+  background: #fdfcff;
+}
+section.substation header,
+section.substation footer,
+section.substation section::after,
+section.substation blockquote::before,
+section.substation blockquote::after {
+  color: #cbe5f6;
+}
+section.substation table th,
+section.substation table td {
+  border-color: #fdfcff;
+}
+section.substation table thead th {
+  background: #fdfcff;
+  color: #0288d1;
+}
+section.substation table tbody > tr:nth-child(odd) td,
+section.substation table tbody > tr:nth-child(odd) th {
+  background: rgba(253, 252, 255, 0.1);
+}
+section.rtacfamily {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("https://prodcdn.selinc.com/uploadedImages/Web/Products/Images/3530%20Family.png");
+  background-repeat: no-repeat;
+  background-position: right 50% bottom 0%;
+}
+section.rtacfamily a,
+section.rtacfamily mark {
+  color: #81d4fa;
+}
+section.rtacfamily code {
+  background: #cbe5f6;
+  color: #0288d1;
+}
+section.rtacfamily h1 strong,
+section.rtacfamily h2 strong,
+section.rtacfamily h3 strong,
+section.rtacfamily h4 strong,
+section.rtacfamily h5 strong,
+section.rtacfamily h6 strong {
+  color: #81d4fa;
+}
+section.rtacfamily pre > code {
+  background: #fdfcff;
+}
+section.rtacfamily header,
+section.rtacfamily footer,
+section.rtacfamily section::after,
+section.rtacfamily blockquote::before,
+section.rtacfamily blockquote::after {
+  color: #cbe5f6;
+}
+section.rtacfamily table th,
+section.rtacfamily table td {
+  border-color: #fdfcff;
+}
+section.rtacfamily table thead th {
+  background: #fdfcff;
+  color: #0288d1;
+}
+section.rtacfamily table tbody > tr:nth-child(odd) td,
+section.rtacfamily table tbody > tr:nth-child(odd) th {
+  background: rgba(253, 252, 255, 0.1);
+}
+section.axion {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("https://prodcdn.selinc.com/uploadedImages/Web/Products/Images/2240.png");
+  background-repeat: no-repeat;
+  background-position: right 50% bottom -25%;
+}
+section.axion a,
+section.axion mark {
+  color: #81d4fa;
+}
+section.axion code {
+  background: #cbe5f6;
+  color: #0288d1;
+}
+section.axion h1 strong,
+section.axion h2 strong,
+section.axion h3 strong,
+section.axion h4 strong,
+section.axion h5 strong,
+section.axion h6 strong {
+  color: #81d4fa;
+}
+section.axion pre > code {
+  background: #fdfcff;
+}
+section.axion header,
+section.axion footer,
+section.axion section::after,
+section.axion blockquote::before,
+section.axion blockquote::after {
+  color: #cbe5f6;
+}
+section.axion table th,
+section.axion table td {
+  border-color: #fdfcff;
+}
+section.axion table thead th {
+  background: #fdfcff;
+  color: #0288d1;
+}
+section.axion table tbody > tr:nth-child(odd) td,
+section.axion table tbody > tr:nth-child(odd) th {
+  background: rgba(253, 252, 255, 0.1);
+}
+section.acrtactable {
+  color: #000000;
+  background-color: #ffffff;
+}
+section.acrtactable a,
+section.acrtactable mark {
+  color: #81d4fa;
+}
+section.acrtactable code {
+  background: #cbe5f6;
+  color: #0288d1;
+}
+section.acrtactable h1 strong,
+section.acrtactable h2 strong,
+section.acrtactable h3 strong,
+section.acrtactable h4 strong,
+section.acrtactable h5 strong,
+section.acrtactable h6 strong {
+  color: #81d4fa;
+}
+section.acrtactable pre > code {
+  background: #fdfcff;
+}
+section.acrtactable header,
+section.acrtactable footer,
+section.acrtactable section::after,
+section.acrtactable blockquote::before,
+section.acrtactable blockquote::after {
+  color: #cbe5f6;
+}
+section.acrtactable table th,
+section.acrtactable table td {
+  border-color: #88B0E4;
+  background-image: linear-gradient(#98BFEB, #B8D4F2);
+  text-align: left;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+section.acrtactable table thead th {
+  background-color: #9CC2EC;
+  color: #10257F;
+}
+section.acrtactable table tbody > tr:nth-child(odd) td,
+section.acrtactable table tbody > tr:nth-child(odd) th {
+  background: #FFFFFF;
+}
+section.acrtactable table tbody > tr:nth-child(even) td,
+section.acrtactable table tbody > tr:nth-child(even) th {
+  background: #EAF5F5;
+}
+section.lead {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: var(--selbluebackground);
+  color: #ffffff;
+}
+section.lead h1,
+section.lead h2,
+section.lead h3 {
+  text-align: center;
+  color: var(--selyellow);
+  text-transform: uppercase;
+  background-image: url('https://prodcdn.selinc.com/Content/images/SEL_Logo-Stacked_White.9e46c959.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: calc(225px + 5em);
+  padding-top: 5em;
+}
+section.lead h4,
+section.lead h5,
+section.lead h6 {
+  text-align: center;
+  color: #ffffff;
+}
+section.lead h1 svg[data-marp-fitting=svg],
+section.lead h2 svg[data-marp-fitting=svg],
+section.lead h3 svg[data-marp-fitting=svg],
+section.lead h4 svg[data-marp-fitting=svg],
+section.lead h5 svg[data-marp-fitting=svg],
+section.lead h6 svg[data-marp-fitting=svg] {
+  --preserve-aspect-ratio: xMidYMid meet;
+}
+section.lead p {
+  text-align: center;
+}
+section.lead blockquote > h1,
+section.lead blockquote > h2,
+section.lead blockquote > h3,
+section.lead blockquote > h4,
+section.lead blockquote > h5,
+section.lead blockquote > h6,
+section.lead blockquote > p {
+  text-align: left;
+}
+section.lead blockquote svg[data-marp-fitting=svg]:not([data-marp-fitting-math]) {
+  --preserve-aspect-ratio: xMinYMin meet;
+}
+section.lead ul > li > p,
+section.lead ol > li > p {
+  text-align: left;
+}
+section.lead table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header,
+footer,
+section::after {
+  box-sizing: border-box;
+  font-size: 66%;
+  height: 70px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 10px 25px;
+  position: absolute;
+}
+
+header {
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section::after {
+  right: 0;
+  bottom: 0;
+  font-size: 80%;
+}
+
+/*# sourceMappingURL=simple.css.map */
