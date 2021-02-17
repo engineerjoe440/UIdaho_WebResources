@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Build & Deploy to GitHub Pages
+    - name: Build & Deploy to Master Branch
       env: 
-        MARP_ARGS: "README.md -o index.html"
+        MARP_ARGS: "README.md -o index.html -h # Don't Run Yet! Not Ready"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ github.repository }}
         PUBLISH_TO_BRANCH: master
-        BASE_URL: https://alexsci.com/test-marp-action/
+        BASE_URL: https://blog.stanleysolutionsnw.com
       uses: ralexander-phi/marp-action@master
       
