@@ -567,8 +567,19 @@ section.lead {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  background-color: var(--selbluebackground);
+  background-color: #ffffff;
   color: #ffffff;
+}
+section.lead:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 1000px);
+  left: 0;
+  width: 500px;
+  height:2000px;
+  background: #000;
+  transform: skew(-15deg);
+  transform-origin:top;
 }
 section.lead h1,
 section.lead h2,
@@ -576,7 +587,7 @@ section.lead h3 {
   text-align: center;
   color: var(--selyellow);
   text-transform: uppercase;
-  background-image: url('https://prodcdn.selinc.com/Content/images/SEL_Logo-Stacked_White.9e46c959.svg');
+  background-image: url('https://raw.githubusercontent.com/engineerjoe440/UIdaho_ControlsClass/master/source/_static/UI_ENG_stacked_G_W.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: calc(225px + 5em);
