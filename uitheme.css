@@ -16,9 +16,8 @@ Theme Based off Work from Tatsuya Sakaguchi: https://github.com/ttyskg/marp-them
 
 /* Global Constants that are Supported in New Browsers */
 :root {
-  --selblue: #003B70;
-  --selbluebackground: #032843;
-  --selyellow: #FFBA5F;
+  --vandalgold: #F1B300;
+  --pridegold: #FEBE10;
 }
 
 .hljs {
@@ -186,7 +185,7 @@ blockquote {
   position: relative;
 }
 blockquote::after, blockquote::before {
-  content: "“";
+  content: "ï¿½";
   display: block;
   font-family: "Times New Roman", serif;
   font-weight: bold;
@@ -235,13 +234,9 @@ section {
 
 section {
     @extend .transmissionlines;
-    @extend .substationengineers;
     @extend .future;
     @extend .controlcenter;
     @extend .substation;
-    @extend .rtacfamily;
-    @extend .axion;
-    @extend .acrtactable;
 }
 
 section > *:first-child,
@@ -393,67 +388,6 @@ section.transmissionlines table thead th {
 }
 section.transmissionlines table tbody > tr:nth-child(odd) td,
 section.transmissionlines table tbody > tr:nth-child(odd) th {
-  background: rgba(253, 252, 255, 0.1);
-}
-section.substationengineers {
-  color: #fdfcff;
-  background-color: #02E9D1;
-  background-image: url("https://selinc.com/uploadedImages/Web/Promotional/PNM/Substation-engineers.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 24px;
-}
-section.substationengineers p {
-  text-shadow: 0px 0px 35px #444E55,0px 0px 35px #444E55,
-                 0px 0px 35px #444E55,0px 0px 35px #444E55;
-  color:#ffffff;
-}
-section.substationengineers a,
-section.substationengineers mark {
-  color: #81d4fa;
-}
-section.substationengineers code {
-  color: #0288d1;
-  background: #ffffff00;
-  text-shadow: 0px 0px 35px #ffffff,0px 0px 35px #ffffff,
-                 0px 0px 35px #ffffff,0px 0px 35px #ffffff;
-}
-section.substationengineers h1,
-section.substationengineers h2,
-section.substationengineers h3,
-section.substationengineers h4,
-section.substationengineers h5,
-section.substationengineers h6 {
-  color: #502105;
-}
-section.substationengineers h1 strong,
-section.substationengineers h2 strong,
-section.substationengineers h3 strong,
-section.substationengineers h4 strong,
-section.substationengineers h5 strong,
-section.substationengineers h6 strong {
-  color: #81d4fa;
-}
-section.substationengineers pre > code {
-  background: #fdfcff;
-}
-section.substationengineers header,
-section.substationengineers footer,
-section.substationengineers section::after,
-section.substationengineers blockquote::before,
-section.substationengineers blockquote::after {
-  color: #cbe5f6;
-}
-section.substationengineers table th,
-section.substationengineers table td {
-  border-color: #fdfcff;
-}
-section.substationengineers table thead th {
-  background: #fdfcff;
-  color: #0288d1;
-}
-section.substationengineers table tbody > tr:nth-child(odd) td,
-section.substationengineers table tbody > tr:nth-child(odd) th {
   background: rgba(253, 252, 255, 0.1);
 }
 section.future {
@@ -627,146 +561,6 @@ section.substation table thead th {
 section.substation table tbody > tr:nth-child(odd) td,
 section.substation table tbody > tr:nth-child(odd) th {
   background: rgba(253, 252, 255, 0.1);
-}
-section.rtacfamily {
-  color: #000000;
-  background-color: #ffffff;
-  background-image: url("https://prodcdn.selinc.com/uploadedImages/Web/Products/Images/3530%20Family.png");
-  background-repeat: no-repeat;
-  background-position: right 50% bottom 0%;
-}
-section.rtacfamily a,
-section.rtacfamily mark {
-  color: #81d4fa;
-}
-section.rtacfamily code {
-  background: #cbe5f6;
-  color: #0288d1;
-}
-section.rtacfamily h1 strong,
-section.rtacfamily h2 strong,
-section.rtacfamily h3 strong,
-section.rtacfamily h4 strong,
-section.rtacfamily h5 strong,
-section.rtacfamily h6 strong {
-  color: #81d4fa;
-}
-section.rtacfamily pre > code {
-  background: #fdfcff;
-}
-section.rtacfamily header,
-section.rtacfamily footer,
-section.rtacfamily section::after,
-section.rtacfamily blockquote::before,
-section.rtacfamily blockquote::after {
-  color: #cbe5f6;
-}
-section.rtacfamily table th,
-section.rtacfamily table td {
-  border-color: #fdfcff;
-}
-section.rtacfamily table thead th {
-  background: #fdfcff;
-  color: #0288d1;
-}
-section.rtacfamily table tbody > tr:nth-child(odd) td,
-section.rtacfamily table tbody > tr:nth-child(odd) th {
-  background: rgba(253, 252, 255, 0.1);
-}
-section.axion {
-  color: #000000;
-  background-color: #ffffff;
-  background-image: url("https://prodcdn.selinc.com/uploadedImages/Web/Products/Images/2240.png");
-  background-repeat: no-repeat;
-  background-position: right 50% bottom -25%;
-}
-section.axion a,
-section.axion mark {
-  color: #81d4fa;
-}
-section.axion code {
-  background: #cbe5f6;
-  color: #0288d1;
-}
-section.axion h1 strong,
-section.axion h2 strong,
-section.axion h3 strong,
-section.axion h4 strong,
-section.axion h5 strong,
-section.axion h6 strong {
-  color: #81d4fa;
-}
-section.axion pre > code {
-  background: #fdfcff;
-}
-section.axion header,
-section.axion footer,
-section.axion section::after,
-section.axion blockquote::before,
-section.axion blockquote::after {
-  color: #cbe5f6;
-}
-section.axion table th,
-section.axion table td {
-  border-color: #fdfcff;
-}
-section.axion table thead th {
-  background: #fdfcff;
-  color: #0288d1;
-}
-section.axion table tbody > tr:nth-child(odd) td,
-section.axion table tbody > tr:nth-child(odd) th {
-  background: rgba(253, 252, 255, 0.1);
-}
-section.acrtactable {
-  color: #000000;
-  background-color: #ffffff;
-}
-section.acrtactable a,
-section.acrtactable mark {
-  color: #81d4fa;
-}
-section.acrtactable code {
-  background: #cbe5f6;
-  color: #0288d1;
-}
-section.acrtactable h1 strong,
-section.acrtactable h2 strong,
-section.acrtactable h3 strong,
-section.acrtactable h4 strong,
-section.acrtactable h5 strong,
-section.acrtactable h6 strong {
-  color: #81d4fa;
-}
-section.acrtactable pre > code {
-  background: #fdfcff;
-}
-section.acrtactable header,
-section.acrtactable footer,
-section.acrtactable section::after,
-section.acrtactable blockquote::before,
-section.acrtactable blockquote::after {
-  color: #cbe5f6;
-}
-section.acrtactable table th,
-section.acrtactable table td {
-  border-color: #88B0E4;
-  background-image: linear-gradient(#98BFEB, #B8D4F2);
-  text-align: left;
-  font-weight: normal;
-  font-family: sans-serif;
-}
-section.acrtactable table thead th {
-  background-color: #9CC2EC;
-  color: #10257F;
-}
-section.acrtactable table tbody > tr:nth-child(odd) td,
-section.acrtactable table tbody > tr:nth-child(odd) th {
-  background: #FFFFFF;
-}
-section.acrtactable table tbody > tr:nth-child(even) td,
-section.acrtactable table tbody > tr:nth-child(even) th {
-  background: #EAF5F5;
 }
 section.lead {
   display: flex;
