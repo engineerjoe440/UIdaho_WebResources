@@ -14,6 +14,7 @@ Welcome to University of Idaho ECE Industrial Controls!
    :caption: Contents:
    
    cheatsheets
+   presentations
 
 
 
