@@ -18,6 +18,7 @@
 |     MB              |     Mirrored Bits Protocol                                |     SEL proprietary, high-speed protection protocol              |
 |     DNP             |     Distributed Network Protocol                          |     Industrial standard SCADA protocol                           |
 |     MOD             |     Modbus                                                |     Antiquated industrial standard SCADA protocol                |
+|     IEEE            |     Institute of Electrical and Electronics Engineers     |     Electrical/Electronic professional organization              |
 |     IEC             |     International Electrotechnical Commission             |     Industrial/Electrical standards organization                 |
 |     ANSI            |     American National Standards Institute                 |     Industrial/Electrical standards organization                 |
 |     ASCII           |     American Standard Code for Information Interchange    |                                                                  |
@@ -33,9 +34,9 @@
 |     CFC             |     Continuous Function Chart                             |     A block style of logic implementation in IEC-61131           |
 |     LD              |     Ladder Diagram                                        |     A contact style of logic implementation in IEC-61131         |
 |     ST              |     Structured Text                                       |     A code style of logic implementation in IEC-61131            |
-|     hmi             |     Human Machine Interface                               |     Visual monitoring and control interface                      |
-|     db9             |     N/A                                                   |     D-sub 9-pin serial connector (shaped like a D)               |
-|     rj45            |     N/A                                                   |     Standard ethernet connector                                  |
+|     HMI             |     Human Machine Interface                               |     Visual monitoring and control interface                      |
+|     DB9             |     N/A                                                   |     D-sub 9-pin serial connector (shaped like a D)               |
+|     RJ45            |     N/A                                                   |     Standard ethernet connector                                  |
 |     Com-Proc        |     Communications Processor                              |     An IED that processes and aggregates communication           |
 |     RTAC            |     Real Time Automation Controller                       |     SEL proprietary com-proc and logic controller                |
 |     TCP             |     Transmission Control Protocol                         |     Reliable, but verbose, method of ethernet comms              |
@@ -45,8 +46,8 @@
 |     SSH             |     Secure Shell                                          |     Encrypted protocol intended for Unix terminal access         |
 |     RX              |     Receive/Receiver                                      |     Channel for accepting data input                             |
 |     TX              |     Transmit/Transmitter                                  |     Channel for providing data output                            |
-|     Base-t          |     N/A                                                   |     Copper Ethernet Port (RJ45 connector)                        |
-|     base-fx         |     N/A                                                   |     Fiber Ethernet Port (commonly LC connector)                  |
+|     Base-T          |     N/A                                                   |     Copper Ethernet Port (RJ45 connector)                        |
+|     Base-FX         |     N/A                                                   |     Fiber Ethernet Port (commonly LC connector)                  |
 |     PTP             |     Precise Time Protocol                                 |     High-accuracy ethernet-based time protocol                   |
 |     SNTP            |     Simple Network Time Protocol                          |     Moderate-accuracy ethernet-based time protocol               |
 |     SNMP            |     Simple Network Management Protocol                    |     Ethernet control device management protocol                  |
@@ -87,6 +88,8 @@
 |     FLISR           |     Fault Location, Isolation, and Service Restoration    |     Automated control for distributed fault management           |
 |     ADMS            |     Advanced Distribution Management System               |     Automated control for distribution systems                   |
 |     DER             |     Distributed Energy Resource                           |     Small (relative) energy generation connected to distribution |
+|     DERMS           |     Distributed Energy Resources Management System        |     Management system and interface for one or more DERs         |
+|     DSO             |     Distribution Systems Operator                         |     Entity responsible for organizing generation capacity        |
 |     DG              |     Distributed Generation                                |     Distributed generation resource(s)                           |
 |     BMS             |     Battery Management/Monitoring System                  |     A system for managing or monitoring battery(ies)             |
 |     PCS             |     Power Control System                                  |     A system for controlling the power of an industrial site     |
