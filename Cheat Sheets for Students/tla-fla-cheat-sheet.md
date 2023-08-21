@@ -6,14 +6,14 @@
 |     Acronym         |     Full name                                             |     Quick defenition                                             |
 |---------------------|-----------------------------------------------------------|------------------------------------------------------------------|
 |     ICS             |     Industrial Control System                             |     General name for control systems                             |
-|     scada           |     Supervisory Control And Data Acquisition              |     Control systems primarily for power grid systems             |
-|     ied             |     Intelligent Electronic Device                         |     Typically referred to as the simplest block of an ICS        |
-|     tla             |     Three Letter Acronym                                  |     Quick notation for three-letter acronyms                     |
-|     fla             |     Four Letter Acronym                                   |     Quick notation for four-letter acronyms                      |
-|     plc             |     Programmable Logic Controller                         |     Standard process control device                              |
+|     SCADA           |     Supervisory Control And Data Acquisition              |     Control systems primarily for power grid systems             |
+|     IED             |     Intelligent Electronic Device                         |     Typically referred to as the simplest block of an ICS        |
+|     TLA             |     Three Letter Acronym                                  |     Quick notation for three-letter acronyms                     |
+|     FLA             |     Four Letter Acronym                                   |     Quick notation for four-letter acronyms                      |
+|     PLC             |     Programmable Logic Controller                         |     Standard process control device                              |
 |     PAC             |     Programmable Automation Controller                    |     Another name for a Programmable Logic Controller             |
-|     rtd             |     Resistive Thermal Device                              |     Device used for sensing and measuring temperature            |
-|     tc              |     Thermo-Couple                                         |     Device used for sensing and measuring temperature            |
+|     RTD             |     Resistive Thermal Device                              |     Device used for sensing and measuring temperature            |
+|     TC              |     Thermo-Couple                                         |     Device used for sensing and measuring temperature            |
 |     SEL-FM          |     SEL Fast-Message Protocol                             |     SEL proprietary, self-describing, SCADA protocol             |
 |     MB              |     Mirrored Bits Protocol                                |     SEL proprietary, high-speed protection protocol              |
 |     DNP             |     Distributed Network Protocol                          |     Industrial standard SCADA protocol                           |
@@ -79,11 +79,15 @@
 |     MV              |     Measured Value                                        |     IEC standard variable type for analog data points            |
 |     CMV             |     Complex Measured Value                                |     IEC standard variable type for complex analog data           |
 |     SPS             |     Single Point Status                                   |     IEC standard variable type for binary data points            |
+|     DPS             |     Double Point Status                                   |     IEC standard variable type for physical contact states       |
 |     EA              |     Engineering Access                                    |     Description for remote configuration communications          |
 |     MSB             |     Most Significant Bit/Byte                             |     Most-significant bit/byte leads in protocol transmission     |
 |     LSB             |     Least Significant Bit/Byte                            |     Least-significant bit/byte leads in protocol transmission    |
 |     ARP             |     Address Resolution Protocol                           |     Used to resolve MAC addresses for Ethernet switching         |
 |     FLISR           |     Fault Location, Isolation, and Service Restoration    |     Automated control for distributed fault management           |
 |     ADMS            |     Advanced Distribution Management System               |     Automated control for distribution systems                   |
+|     DER             |     Distributed Energy Resource                           |     Small (relative) energy generation connected to distribution |
+|     DG              |     Distributed Generation                                |     Distributed generation resource(s)                           |
 |     BMS             |     Battery Management/Monitoring System                  |     A system for managing or monitoring battery(ies)             |
 |     PCS             |     Power Control System                                  |     A system for controlling the power of an industrial site     |
+|     PCC             |     Power of Common Coupling                              |     The metered interconnection point for DER/renewable sites    |
