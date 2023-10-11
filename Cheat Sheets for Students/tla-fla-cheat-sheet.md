@@ -92,5 +92,9 @@
 |     DSO             |     Distribution Systems Operator                         |     Entity responsible for organizing generation capacity        |
 |     DG              |     Distributed Generation                                |     Distributed generation resource(s)                           |
 |     BMS             |     Battery Management/Monitoring System                  |     A system for managing or monitoring battery(ies)             |
+|     BESS            |     Battery Energy Storage System                         |     A battery storage system for the bulk electric power system  |
 |     PCS             |     Power Control System                                  |     A system for controlling the power of an industrial site     |
 |     PCC             |     Power of Common Coupling                              |     The metered interconnection point for DER/renewable sites    |
+|     BES             |     Bulk Electric (Power) System                          |     A name for the complete electrical grid and power system     |
+|     FERC            |     Federal Energy Regulatory Commission                  |     US Gov.'t entity responsible for regulating energy systems   |
+|     NERC            |     North American Electric Reliability Corporation       |     Nonprofit corporation which provides regulatory standards    |
